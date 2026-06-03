@@ -311,7 +311,7 @@ export default function App() {
                           }`}
                         >
                           <Utensils className="w-4 h-4 mx-auto mb-1 text-blush-dark" />
-                          <span className="text-[11px] block font-medium">Una comida y/o cena</span>
+                          <span className="text-[11px] block font-medium">Comida y/o cena</span>
                         </button>
                         <button
                           onClick={() => setSelectedVibe('surprise')}
@@ -322,7 +322,7 @@ export default function App() {
                           }`}
                         >
                           <Compass className="w-4 h-4 mx-auto mb-1 text-blush-dark" />
-                          <span className="text-[11px] block font-medium">Sorpréndeme</span>
+                          <span className="text-[11px] block font-medium">¡Aventura sorpresa!</span>
                         </button>
                       </div>
                     </div>
@@ -417,7 +417,7 @@ export default function App() {
                   </div>
 
                   <div className="bg-stone-50 border border-stone-100 rounded-2xl p-4 text-left space-y-2.5 font-mono text-xs text-stone-700 max-w-sm mx-auto">
-                    <p>✨ <strong className="text-stone-900">Selección de plan:</strong> {selectedVibe === 'cafe' ? 'Bebida ☕' : selectedVibe === 'dinner' ? 'Comida y/o cena 🍽️' : 'Sorpréndeme 🔮'}</p>
+                    <p>✨ <strong className="text-stone-900">Selección de plan:</strong> {selectedVibe === 'cafe' ? 'Bebida ☕' : selectedVibe === 'dinner' ? 'Comida y/o cena 🍽️' : '¡Aventura sorpresa! 🔮'}</p>
                     <p>📅 <strong className="text-stone-900">Fechas:</strong> {selectedTiming === 'weekend' ? 'Un día de fin de semana' : selectedTiming === 'weekday' ? 'Un día de semana' : 'Cuanto antes! ⚡'}</p>
                     {customNote.trim() && (
                       <p className="border-t border-stone-200/60 pt-2 text-stone-600 italic">
@@ -434,9 +434,9 @@ export default function App() {
                       <motion.button
                         id="copy-text-btn"
                         onClick={() => {
-                          const summary = `Clara's Date Choice:\n- Vibe: ${selectedVibe === 'cafe' ? 'Cozy Café ☕' : selectedVibe === 'dinner' ? 'Gourmet Dinner 🍽️' : 'Surprise Adventure 🔮'}\n- Timing: ${selectedTiming === 'weekend' ? 'This Weekend 📅' : selectedTiming === 'weekday' ? 'During the Week ⏰' : 'ASAP! ⚡'}\n- Note: ${customNote || 'None'}`;
+                          const summary = `Clara's Date Choice:\n- Vibe: ${selectedVibe === 'cafe' ? 'Bebida ☕' : selectedVibe === 'dinner' ? 'Comida y/o cena 🍽️' : '¡Aventura sorpresa! 🔮'}\n- Timing: ${selectedTiming === 'weekend' ? 'Un día de fin de semana 📅' : selectedTiming === 'weekday' ? 'Un día de semana ⏰' : 'Cuanto antes! ⚡'}\n- Note: ${customNote || 'None'}`;
                           navigator.clipboard.writeText(summary);
-                          alert("A summary of Clara's choices is copied to clipboard! Paste it to me! 💌");
+                          alert("¡¡Las opciones se han copiado al portapapeles, ya puedes enviármelas!! 💌");
                         }}
                         whileHover={{ scale: 1.03 }}
                         whileTap={{ scale: 0.97 }}
@@ -448,7 +448,7 @@ export default function App() {
                       <motion.button
                         id="share-instagram-btn"
                         onClick={() => {
-                          const summary = `Clara's Date Choice:\n- Vibe: ${selectedVibe === 'cafe' ? 'Cozy Café ☕' : selectedVibe === 'dinner' ? 'Gourmet Dinner 🍽️' : 'Surprise Adventure 🔮'}\n- Timing: ${selectedTiming === 'weekend' ? 'This Weekend 📅' : selectedTiming === 'weekday' ? 'During the Week ⏰' : 'ASAP! ⚡'}\n- Note: ${customNote || 'None'}`;
+                          const summary = `Clara's Date Choice:\n- Vibe: ${selectedVibe === 'cafe' ? 'Bebida ☕' : selectedVibe === 'dinner' ? 'Comida y/o cena 🍽️' : '¡Aventura sorpresa! 🔮'}\n- Timing: ${selectedTiming === 'weekend' ? 'Un día de fin de semana 📅' : selectedTiming === 'weekday' ? 'Un día de semana ⏰' : 'Cuanto antes! ⚡'}\n- Note: ${customNote || 'None'}`;
                           navigator.clipboard.writeText(summary);
                           alert("¡Copiado! Ahora se abrirá Instagram para que puedas pegarlo y enviármelo por Direct Message 💌");
                           window.open("https://www.instagram.com/direct/inbox/", "_blank");
