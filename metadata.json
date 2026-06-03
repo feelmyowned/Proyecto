@@ -1,0 +1,6 @@
+{
+  "name": "An Invitation for Clara",
+  "description": "A beautifully animated interactive date invitation website crafted for Clara.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
