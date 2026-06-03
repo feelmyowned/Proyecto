@@ -66,7 +66,7 @@ export default function App() {
     "¡Este código no acepta no por respuesta!",
     "Dice la leyenda que nadie ha podido pulsar este botón antes.",
     "¡Acceso denegado!",
-    "Clara, por favor, no lo hagas más difícil!",
+    "¿De veras dirás que no?",
   ];
 
   // Logic to jump the No button to a random safe position within parent container
