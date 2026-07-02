@@ -199,13 +199,13 @@ export default function App() {
                   <Heart className="w-12 h-12 text-blush-dark fill-blush-mid" />
                 </motion.div>
                 <div className="absolute top-1 right-2 bg-amber-200 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded-full rotate-12 shadow-sm font-mono">
-                  CLARA!
+                  HOLA!
                 </div>
               </div>
 
               {/* Title & Romantic Jargon */}
               <h1 className="font-serif text-3xl md:text-3xl text-stone-800 font-bold mb-3 tracking-tight">
-                Hola Clara... :)
+                Hola guapa... :)
               </h1>
               <p className="text-stone-600 text-sm leading-relaxed mb-8 font-sans max-w-xs mx-auto">
                 He hecho esto a casi las 4 de la mañana, no me lo tengas en cuenta...
@@ -257,7 +257,7 @@ export default function App() {
               {/* Counter Sassy Indicator footer */}
               {noCount > 0 && (
                 <p className="text-[11px] font-mono text-blush-dark/80 mt-4 transition-all animate-bounce">
-                  Clara ha intentado escabullirse {noCount} veces{noCount > 1 ? 's' : ''}! 🚫
+                  Ha intentado escabullirse {noCount} veces{noCount > 1 ? 's' : ''}! 🚫
                 </p>
               )}
             </motion.div>
@@ -412,7 +412,7 @@ export default function App() {
                       Ordenes recibidas! Obtendrás respuesta en un plazo de 6 a 8 semanas. 🧾✨
                     </h3>
                     <p className="text-xs text-stone-500 mt-2 max-w-xs mx-auto">
-                      Aquí están las opciones que ha elegido Clara, certificadas oficialmente:
+                      Aquí están las opciones que ha elegido, certificadas oficialmente:
                     </p>
                   </div>
 
@@ -434,7 +434,7 @@ export default function App() {
                       <motion.button
                         id="copy-text-btn"
                         onClick={() => {
-                          const summary = `Clara's Date Choice:\n- Vibe: ${selectedVibe === 'cafe' ? 'Bebida ☕' : selectedVibe === 'dinner' ? 'Comida y/o cena 🍽️' : '¡Aventura sorpresa! 🔮'}\n- Timing: ${selectedTiming === 'weekend' ? 'Un día de fin de semana 📅' : selectedTiming === 'weekday' ? 'Un día de semana ⏰' : 'Cuanto antes! ⚡'}\n- Note: ${customNote || 'None'}`;
+                          const summary = `Date Choice:\n- Vibe: ${selectedVibe === 'cafe' ? 'Bebida ☕' : selectedVibe === 'dinner' ? 'Comida y/o cena 🍽️' : '¡Aventura sorpresa! 🔮'}\n- Timing: ${selectedTiming === 'weekend' ? 'Un día de fin de semana 📅' : selectedTiming === 'weekday' ? 'Un día de semana ⏰' : 'Cuanto antes! ⚡'}\n- Note: ${customNote || 'None'}`;
                           navigator.clipboard.writeText(summary);
                           alert("¡¡Las opciones se han copiado al portapapeles, ya puedes enviármelas!! 💌");
                         }}
@@ -448,7 +448,7 @@ export default function App() {
                       <motion.button
                         id="share-instagram-btn"
                         onClick={() => {
-                          const summary = `Clara's Date Choice:\n- Vibe: ${selectedVibe === 'cafe' ? 'Bebida ☕' : selectedVibe === 'dinner' ? 'Comida y/o cena 🍽️' : '¡Aventura sorpresa! 🔮'}\n- Timing: ${selectedTiming === 'weekend' ? 'Un día de fin de semana 📅' : selectedTiming === 'weekday' ? 'Un día de semana ⏰' : 'Cuanto antes! ⚡'}\n- Note: ${customNote || 'None'}`;
+                          const summary = `Date Choice:\n- Vibe: ${selectedVibe === 'cafe' ? 'Bebida ☕' : selectedVibe === 'dinner' ? 'Comida y/o cena 🍽️' : '¡Aventura sorpresa! 🔮'}\n- Timing: ${selectedTiming === 'weekend' ? 'Un día de fin de semana 📅' : selectedTiming === 'weekday' ? 'Un día de semana ⏰' : 'Cuanto antes! ⚡'}\n- Note: ${customNote || 'None'}`;
                           navigator.clipboard.writeText(summary);
                           alert("¡Copiado! Ahora se abrirá Instagram para que puedas pegarlo y enviármelo por Direct Message 💌");
                           window.open("https://www.instagram.com/direct/inbox/", "_blank");
@@ -479,7 +479,7 @@ export default function App() {
       {/* Page Footer */}
       <footer id="app-footer" className="w-full text-center z-10 pt-4">
         <p className="text-[10px] font-mono text-stone-400">
-          Hecho con mucho cariño para Clara. :)
+          Hecho con mucho cariño. :)
         </p>
       </footer>
     </div>
