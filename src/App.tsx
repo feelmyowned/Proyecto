@@ -391,7 +391,7 @@ export default function App() {
                     whileTap={{ scale: 0.98 }}
                     className="w-full mt-6 py-3.5 bg-blush-dark hover:bg-[#a05249] text-white font-semibold rounded-2xl shadow-md transition-colors flex items-center justify-center gap-2 cursor-pointer text-sm"
                   >
-                    <span>Send Date Request to My phone 💌</span>
+                    <span>¿Estás lista? Envíamelo 💌</span>
                     <ChevronRight className="w-4 h-4" />
                   </motion.button>
                 </>
