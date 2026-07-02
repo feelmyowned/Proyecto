@@ -216,7 +216,7 @@ export default function App() {
                   ¿Quedamos para pasar un día inolvidable? ☕🍰
                 </h2>
                 <p className="text-[11px] text-stone-500 font-mono mt-1">
-                  (Prometo intentar no morirme de vergüenza)
+                  (Prometo no morirme de vergüenza)
                 </p>
               </div>
 
@@ -257,7 +257,7 @@ export default function App() {
               {/* Counter Sassy Indicator footer */}
               {noCount > 0 && (
                 <p className="text-[11px] font-mono text-blush-dark/80 mt-4 transition-all animate-bounce">
-                  Ha intentado escabullirse {noCount} veces{noCount > 1 ? 's' : ''}! 🚫
+                  Has intentado escabullirte {noCount} veces{noCount > 1 ? 's' : ''}! 🚫
                 </p>
               )}
             </motion.div>
@@ -409,7 +409,7 @@ export default function App() {
 
                   <div>
                     <h3 className="font-serif text-2xl font-bold text-stone-800">
-                      Ordenes recibidas! Obtendrás respuesta en un plazo de 6 a 8 semanas. 🧾✨
+                      Ordenes recibidas! Obtendrás respuesta en menos de 1/10 parte de un día completo en Jùpiter. 🧾✨
                     </h3>
                     <p className="text-xs text-stone-500 mt-2 max-w-xs mx-auto">
                       Aquí están las opciones que ha elegido, certificadas oficialmente:
